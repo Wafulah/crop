@@ -1,0 +1,355 @@
+body {
+  background: rgb(56, 2, 4);
+  background: radial-gradient(
+    circle,
+    rgba(56, 2, 4, 1) 21%,
+    rgba(1, 10, 38, 1) 95%
+  );
+  font-family: "Anton", Arial, Helvetica, sans-serif;
+  filter: brightness(100%);
+}
+h1 {
+  text-align: center;
+}
+.l {
+  font-size: 70px;
+  text-shadow: -12px 2px 20px rgba(1, 10, 38, 1);
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+.cover {
+  /* height: 2000px; */
+
+  width: 100vw;
+}
+.hero {
+  /* background-color: red; */
+  display: flex;
+  height: 800px;
+}
+/*about class */
+.about {
+  background-color: rgba(255, 0, 0, 0);
+  width: 55%;
+  height: 100%;
+  margin: 0 0 auto auto;
+}
+.contain {
+  height: 55%;
+  width: 30%;
+  margin: 12% 10% auto 0;
+  background: rgb(56, 2, 4);
+  background: linear-gradient(
+    66deg,
+    rgba(9, 1, 39, 0.161) 1%,
+    rgba(1, 10, 38, 0.732) 99%
+  );
+  border-radius: 10px;
+  text-align: center;
+  filter: brightness(100%);
+
+  border-width: 1px;
+
+  box-shadow: 2px 1px 27px 1px rgba(0, 19, 128, 0.368),
+    2px 1px 27px 1px rgba(56, 2, 4, 0.608),
+    1px 1px 15px rgba(255, 255, 255, 0.631);
+}
+.contain:hover {
+  filter: brightness(120%);
+  box-shadow: 2px 1px 17px 1px rgba(0, 19, 128, 0.526),
+    2px 1px 7px 1px rgba(255, 255, 255, 0.501);
+
+  transform: scale(1.1);
+
+  /* margin: 3% auto 3% 20%; */
+}
+.chld {
+  /* background-color: red; */
+  filter: contrast(2px);
+}
+
+.frm {
+  margin: auto;
+  height: 40%;
+  width: 60%;
+  background-color: red;
+}
+
+.inpt {
+  color: rgb(159, 245, 10);
+  background-color: rgba(1, 10, 38, 0.588);
+  padding: 15px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  height: 70px;
+  width: 90%;
+  border: 2px solid green;
+  font-size: large;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-top: 20px;
+
+  filter: brightness(100%) !important;
+  filter: contrast(250%);
+}
+input[type="text"]:focus {
+  background-color: rgb(0, 251, 255);
+  color: rgb(1, 10, 38);
+  font-size: x-large;
+  font-weight: 900;
+  transform: scale(1.06);
+}
+
+.btn {
+  background-color: rgb(8, 163, 8);
+  width: 85%;
+  height: 60px;
+  cursor: pointer;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+.btn:active {
+  background: white;
+  color: green;
+  transform: scale(1.1);
+  filter: blur(5px);
+  filter: brightness(200%);
+}
+
+.info {
+  background-color: #00000ca2;
+  width: 90%;
+  height: 50%;
+  margin: 7% auto;
+  box-shadow: 2px 2px 20px rgb(6, 0, 20);
+}
+
+.infoa {
+  width: 85%;
+  height: 88%;
+  /* background-color: rgb(57, 102, 41); */
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  border-radius: 20px;
+  color: #00000cfb;
+  box-shadow: 1px 1px 10px white, 1px 5px 10px rgba(255, 0, 0, 0.459);
+}
+.head {
+  /* background-color:rgb(161, 244, 131); */
+  background-color: white;
+}
+.bg {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 900;
+  /* padding: 6% ; */
+}
+.hdg {
+  /* background-color: red; */
+  width: 30%;
+  margin: 2% auto;
+}
+
+.infoa_text {
+  color: rgb(248, 0, 0);
+  font-size: x-large;
+  font-weight: bold;
+  padding: 1% 10% 0 10%;
+  font-family: cursive;
+  text-align: center;
+}
+.infob_text {
+  padding: 5px;
+  /* color: rgb(22, 207, 5);
+  font-size: x-large;
+  font-weight: bold;
+  
+  font-family: cursive; */
+}
+/* .hdn {
+  visibility: hidden;
+} */
+.ic {
+  /* background-color: red; */
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+}
+.holder {
+  display: flex;
+}
+.crop {
+  margin: 4%;
+  width: 25%;
+  height: 350px;
+  border-radius: 5px;
+  /* background-color: #000000; */
+  background-color: rgba(1, 10, 38, 1) ;
+}
+
+.yield {
+  margin: 4%;
+  width: 25%;
+  height: 350px;
+  border-radius: 5px;
+  background-color: rgba(56, 2, 4, 1);
+}
+
+.profit {
+  margin: 4%;
+  width: 25%;
+  height: 350px;
+  border-radius: 5px;
+  background-color: rgba(1, 10, 38, 1) ;
+}
+.infdiv {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  flex-direction: row;
+  /* background-color: #000000; */
+}
+.extra-info {
+ 
+  width: 90%;
+  margin: auto;
+  color: white;
+  font-size: medium;
+  /* border-top: dashed green 1px ;
+  border-top: ridge gold 1px; */
+  /* border-right: dashed white 1px;
+  border-left: dashed red 1px; */
+  
+  
+  /* background-color: #000000; */
+}
+.infdiv-text {
+  color: white;
+  font-size: medium;
+  /* background-color: yellow; */
+  margin: 5%;
+  float:left;
+}
+/* .infob_text {
+  color: white;
+  font-size: medium;
+  background-color: none;
+  
+} */
+.val {
+  color: white;
+  font-size: medium;
+  /* background-color: red; */
+  float:right;
+  margin: 5%;
+  border-bottom: dashed green;
+}
+.headng {
+  border-bottom: solid green;
+  width:90%;
+  margin: auto;
+}
+.extra {
+  height: 10px;
+}
+
+.cont {
+  display: flex;
+}
+
+.name {
+  width: 30%;
+  margin: 2% 10% 2% 10%;
+  float: left;
+  background-color: #02030e;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #000000, 2px 1px 10px rgb(1, 1, 19),
+    2px 1px 10px rgb(11, 0, 0);
+}
+
+
+
+.pop-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  /* height: 100vh; */
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(213, 213, 216, 0);
+  backdrop-filter: blur(30px);
+  pointer-events: none;
+}
+
+.pop {
+  width: 75%;
+  height: 93vh;
+  background-color: white;
+  margin: 1% auto;
+  border-radius: 5px;
+  color: black;
+  pointer-events: all;
+  overflow-y: auto;
+}
+.times {
+  /* background-color: rgb(0, 0, 0) ; */
+  /* width: 100%; */
+  height: fit-content;
+  margin: 30% auto auto 90%;
+  filter: blur(1px);
+  float: right;
+  cursor: pointer;
+  pointer-events: all;
+  border-radius: 50%;
+
+
+}
+.show {
+  z-index: 50;
+  position: fixed;
+  background-color: green;
+  height: 40px;
+  width: 7%;
+  margin-left: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.show-div {
+  
+    z-index: 50;
+    position: fixed;
+    /* background-color: green; */
+}
+
+.hr_class {
+  width: 95%;
+  margin: auto;
+}
+.fter {
+  width: 40%;
+  /* background-color: red; */
+  cursor: pointer;
+  margin: 2% auto;
+}
+.fter:hover {
+  transform: scale(1.5);
+
+}
+.rights_div {
+  align-items: center;
+  width: 25%;
+  /* background-color: red; */
+  align-content: center;
+  display: block;
+  margin:auto;
+}
+.rights {
+  color: gray;
+  text-align: center;
+  font-size: smaller;
+  align-items: center;
+}
