@@ -57,11 +57,20 @@ def predict_crop_status(request):
         crop_info = np.array(list(crop_json_info.values()))
 
         #Make prediction 
-        crop_status = loaded_crop_model.predict([crop_info]) 
+        crop_status = loaded_crop_model.predict_proba([crop_info]) 
+        
+        #output five crops
+        top_five_indices = np.argsort(crop_status[0])[::-1][:5]
+        crop_names = np.array(loaded_crop_model.classes_)
+        top_five_crops = crop_names[top_five_indices]
+        top_five_crops_array = np.array(top_five_crops)
+
+        print(top_five_crops_array)
+        
 
         model_prediction = {
             'info' : 'success',
-            'crop_status' : crop_status[0],
+            'crop_status' : top_five_crops_array,
             
         }
 
@@ -196,82 +205,132 @@ def predict_status(request):
 
         crop_info = [N,P,K,temperature,humidity,ph,rainfall]
 
-        crop_status = loaded_crop_model.predict([crop_info]) 
+        crop_status = loaded_crop_model.predict_proba([crop_info]) 
         
-        crop_name = crop_status[0]
+        #output five crops
+        top_five_indices = np.argsort(crop_status[0])[::-1][:5]
+        crop_names = np.array(loaded_crop_model.classes_)
+        top_five_crops = crop_names[top_five_indices]
+        top_five_crops_array = np.array(top_five_crops)
 
-        if "bean" in crop_name:
-            crop_name = "beans"
+        # crop_status = loaded_crop_model.predict([crop_info]) 
+        
+        # crop_name = crop_status[0]
 
-        if "Test" in county.name:
-            county = "Baringo"
+        
 
         csv = Csv.objects.get(name="yield")
         
         f = pd.read_csv(io.StringIO(csv.sheet.read().decode('utf-8')), delimiter=',')
         
+        csv = Csv.objects.get(name="cost")
         
+        k = pd.read_csv(io.StringIO(csv.sheet.read().decode('utf-8')), delimiter=',')
         
         # m = (crop_json_info)
         #predicting the yield
-        today = datetime.date.today()
-        year = today.year
-        county = mapping['county'][str(county)]
-        ha = int(m['ha'])
-        year = int(int(year))
         
-        name = mapping['name'][str(crop_name)]
 
-        if "Test" in str(m['county']):
-            co = "Baringo"
-        else:
-            co = county
-        
-        fy = f[np.isin(f, [2012]).any(axis=1)]
-        fco = fy[np.isin(fy, [str(co)]).any(axis=1)]
-        fnmae = fco[np.isin(fco, [str(crop_name)]).any(axis=1)]
-        mt_ha = fnmae['mt/ha']
-        mt_ha = float(mt_ha.iloc[0])
-        
-       
-        
-        #Make prediction 
-        v  = [[year,county,ha,mt_ha,name]] 
-        v = poly_reg.fit_transform(v)
-        crop_yield_status = loaded_yield_model.predict(v) 
+        rank = []
+        for crop_name in top_five_crops_array:
+            crop_rank = {} 
+            crop_val = {}
+                      
+            if "bean" in crop_name:
+                crop_name = "beans"
+            if "pea" in crop_name:
+                crop_name = "peas"
 
-        #predicting the price
-        csv = Csv.objects.get(name="cost")
-        
-        f = pd.read_csv(io.StringIO(csv.sheet.read().decode('utf-8')), delimiter=',')
-                  
-
-        #retrieve all the values from the json data 
-        m = (crop_json_info)
-       
-        # county = mapping_mt['county'][m['county']]
-        cost = int(m['cost'])
+            # # if "Test" in county.name:
+            #     county = "Baringo"
             
-        # name = mapping_mt['name'][m['name']]
+            today = datetime.date.today()
+            year = today.year
+            co = mapping['county'][str(county)]
+            ha = int(m['ha'])
+            year = int(int(year))
+            
+            name = mapping['name'][str(crop_name)]
+
+            # if "Test" in str(m['county']):
+            #     co = "Baringo"
+            # else:
+            # co = county
+           
+            fy = f[np.isin(f, [2015]).any(axis=1)]
+            
+            fco = fy[np.isin(fy, [str(county)]).any(axis=1)]
+            
+            fnmae = fco[np.isin(fco, [str(crop_name)]).any(axis=1)]
+           
+            mt_ha = fnmae['mt/ha']
+            
+            mt_ha = float(mt_ha.iloc[0])
+            
         
-        fco = f[np.isin(f, [str(co)]).any(axis=1)]
-        fnmae = fco[np.isin(fco, [str(crop_name)]).any(axis=1)]
-        t_c = fnmae['t/c']
-        t_c = float(t_c.iloc[0])
+            
+            #Make prediction 
+            v  = [[year,co,ha,mt_ha,name]] 
+            v = poly_reg.fit_transform(v)
+            crop_yield_status = loaded_yield_model.predict(v) 
+            crop_val["yield"] =  int(crop_yield_status[0])
+            crop_val["turnover"] = int(crop_yield_status[0])/int(ha)
+            
+            # crop_rank[crop_name] = crop_val
+            
+            # rank.append(crop_rank)
+
+           
+
+
+            #predicting the price
+        
+                    
+
+            #retrieve all the values from the json data 
+            # m = (crop_json_info)
+        
+            # county = mapping_mt['county'][m['county']]
+            cost = int(m['cost'])
+            
+            # name = mapping_mt['name'][m['name']]
+            
+            kco = k[np.isin(k, [str(county)]).any(axis=1)]
+            
+            knmae = kco[np.isin(kco, [str(crop_name)]).any(axis=1)]
+            t_c = knmae['t/c']
+            t_c = float(t_c.iloc[0])
+            
+
+            #Make prediction 
+            v = [[t_c,co,cost,name]] 
+            v = poly_reg_mt.fit_transform(v)
+            price_status = loaded_price_model.predict(v) 
+            crop_val["profit"] =  int(price_status[0])
+            crop_val["turnover"] += int(price_status[0])/int(cost)
+            crop_val["turnover"] = round(crop_val["turnover"], 2) 
+            crop_rank[crop_name] = crop_val
+            
+            rank.append(crop_rank)
+             
+            
+
+            
+            
+            Prediction.objects.create(crop=crop_status[0], crop_yield=crop_yield_status[0],profit=price_status[0])
+       
+        rank = sorted(rank, key=lambda x: list(x.values())[0]['turnover'], reverse=True)
+        
+      
+
         
 
-        #Make prediction 
-        v = [[t_c,county,cost,name]] 
-        v = poly_reg_mt.fit_transform(v)
-        price_status = loaded_price_model.predict(v) 
-        
-        Prediction.objects.create(crop=crop_status[0], crop_yield=crop_yield_status[0],profit=price_status[0])
 
         model_prediction = {
             'info' : 'success',
-            'crop_status' : crop_status[0],
-            'crop_yield_status' : crop_yield_status[0],
-            'crop_price_status' : price_status[0]
+            'crops' : rank,
+            # 'crop_yield_status' : crop_yield_status[0],
+            # 'crop_price_status' : price_status[0]
             
         }
 

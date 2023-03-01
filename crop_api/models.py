@@ -21,6 +21,7 @@ class Crop(models.Model):
     mt_ha = models.CharField(max_length=50)
     info = models.TextField()
     image = models.ImageField()
+    cost = models.IntegerField()
 
 
     def __str__(self):

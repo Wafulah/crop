@@ -353,3 +353,18 @@ input[type="text"]:focus {
   font-size: smaller;
   align-items: center;
 }
+
+.heading {
+  
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    text-shadow: -12px 2px 20px rgba(1, 10, 38, 0);
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-family: "Open Sans", sans-serif;
+    padding-left: 7%;
+    
+    
+
+  
+}

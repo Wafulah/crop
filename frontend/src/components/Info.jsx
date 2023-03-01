@@ -1,6 +1,7 @@
 import React from 'react';
 import './info.css';
 import { FaSeedling, FaAppleAlt, FaCoins, FaInfo } from 'react-icons/fa';
+import { GiFruitTree } from 'react-icons/gi';
 
 
 
@@ -34,8 +35,8 @@ export default function Info() {
                   </div>
                   <div className='features'>
                        <div className='icon'>
-                          <div className='icon-holder' style={{ backgroundColor: 'rgba(1,10,38,1)',borderColor:'green' }}>
-                         <FaAppleAlt size={35} style={{color: 'green'}} /> 
+                          <div className='icon-holder' style={{ backgroundColor: 'green',borderColor:'white' }}>
+                         <GiFruitTree size={40} style={{color: 'white'}} /> 
                           </div>
                       </div>
                       <div className='info-holder'>
@@ -52,7 +53,7 @@ export default function Info() {
                   <div className='features'>
                        <div className='icon'>
                           <div className='icon-holder' style={{ backgroundColor: 'green',borderColor:'white' }}>
-                         <FaCoins size={35} style={{color: 'maroon'}} /> 
+                         <FaCoins size={35} style={{color: 'white'}} /> 
                           </div>
                       </div>
                       <div className='info-holder'>
@@ -68,7 +69,7 @@ export default function Info() {
                   </div>
                   <div className='features'>
                        <div className='icon'>
-                          <div className='icon-holder' style={{ backgroundColor: 'rgba(1,10,38,1)',borderColor:'green' }}>
+                          <div className='icon-holder' style={{ backgroundColor: 'green',borderColor:'white' }}>
                          <FaInfo size={35} style={{color: 'white'}} /> 
                           </div>
                       </div>
