@@ -19,6 +19,11 @@ class County(models.Model):
 class Crop(models.Model):
     name = models.CharField(max_length=50)
     mt_ha = models.CharField(max_length=50)
+    fertilizer = models.CharField(max_length=50)
+    types = models.TextField()
+    cond = models.TextField()
+    seedrate = models.CharField(max_length=50)
+    spacing =  models.CharField(max_length=50)
     info = models.TextField()
     image = models.ImageField()
     cost = models.IntegerField()

@@ -9,7 +9,8 @@ urlpatterns = [
     path('predict_yield', views.predict_yield_status),
     path('predict_status', views.predict_status),
     path('predict_status_get', views.predict_status_get.as_view(),name='predict_status_get'),
-    path('predict_price', views.predict_price_status)
+    path('predict_price', views.predict_price_status),
+    path('counties',views.counties_get.as_view())
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -187,7 +187,7 @@ Kwale,2016,233,2681,11.51,banana
 Baringo,2012,820,2952,3.6,rice
 Bungoma,2012,24,64.8,2.7,rice
 Busia,2012,2547,5858,2.3,rice
-Elgeyo marakwet,2012,13.7,29,2.12,rice
+Elgeyo/Marakwet,2012,13.7,29,2.12,rice
 Embu,2012,62,223.2,3.6,rice
 Garissa,2012,70,252,3.6,rice
 Homabay,2012,310,1302,4.2,rice
@@ -197,19 +197,19 @@ Kirinyaga,2012,13572,80075,5.9,rice
 Kisumu,2012,3395,14598,4.3,rice
 Kwale,2012,1486,5349,3.6,rice
 Lamu,2012,653,1823,2.79,rice
-Kericho,2012,5,24.75,4.95,rice
-Kisii,2012,230,828,3.6,rice
-Kiambu,2012,295.7,874,2.96,rice
-Bomet,2012,91,242,2.66,rice
-Embu,2012,2320,9950,4.29,rice
-Kajiado,2012,356,920,2.58,rice
-Isiolo,2012,1647,8070,4.9,rice
+Meru,2012,5,24.75,4.95,rice
+Migori,2012,230,828,3.6,rice
+Murang'a,2012,295.7,874,2.96,rice
+Nyeri,2012,91,242,2.66,rice
+Siaya,2012,2320,9950,4.29,rice
+Taita/Taveta,2012,356,920,2.58,rice
+Tana River,2012,1647,8070,4.9,rice
 Tharaka-Nthi,2012,15,49.5,3.3,rice
 Vihiga,2012,162,319,1.97,rice
 Baringo,2013,900,3820,4.24,rice
 Bungoma,2013,135,446,3.3,rice
 Busia,2013,964,1947,2.02,rice
-Elgeyo marakwet,2013,12,16,1.33,rice
+Elgeyo/Marakwet,2013,12,16,1.33,rice
 Embu,2013,13,30,2.31,rice
 Garissa,2013,25,34,1.36,rice
 Homabay,2013,478,1756,3.67,rice
@@ -219,19 +219,19 @@ Kirinyaga,2013,10710,68492,6.4,rice
 Kisumu,2013,4930,18633,3.78,rice
 Kwale,2013,1490,6349,4.26,rice
 Lamu,2013,68,175,2.57,rice
-Kericho,2013,7,40,5.71,rice
-Kisii,2013,562,170,0.3,rice
-Kiambu,2013,120,95,0.79,rice
-Bomet,2013,120,395,3.29,rice
-Embu,2013,2655,7163,2.7,rice
-Kajiado,2013,248,1306,5.27,rice
-Isiolo,2013,1576,9570,6.07,rice
+Meru,2013,7,40,5.71,rice
+Migori,2013,562,170,0.3,rice
+Murang'a,2013,120,95,0.79,rice
+Nyeri,2013,120,395,3.29,rice
+Siaya,2013,2655,7163,2.7,rice
+Taita/Taveta,2013,248,1306,5.27,rice
+Tana River,2013,1576,9570,6.07,rice
 Tharaka-Nthi,2013,28,64,2.29,rice
 Vihiga,2013,46,94,2.04,rice
 Baringo,2013,740,2190,2.96,rice
 Bungoma,2014,115,293,2.55,rice
 Busia,2014,964,1947,2.02,rice
-Elgeyo marakwet,2014,14.3,20.34,1.42,rice
+Elgeyo/Marakwet,2014,14.3,20.34,1.42,rice
 Embu,2014,5,15,3,rice
 Garissa,2014,30,64,2.13,rice
 Homabay,2014,523,1773,3.39,rice
@@ -241,19 +241,19 @@ Kirinyaga,2014,12465,49906.5,4,rice
 Kisumu,2014,4540,18390,4.05,rice
 Kwale,2014,1273,4356,3.42,rice
 Lamu,2014,491,1371,2.79,rice
-Kericho,2014,17,45,2.65,rice
-Kisii,2014,680.9,1421.06,2.09,rice
-Kiambu,2014,102.6,261.4,2.55,rice
-Bomet,2014,102.6,261.4,2.55,rice
-Embu,2014,2648,8137.76,3.07,rice
-Kajiado,2014,265,1396,5.27,rice
-Isiolo,2014,1355,4244.15,3.13,rice
+Meru,2014,17,45,2.65,rice
+Migori,2014,680.9,1421.06,2.09,rice
+Murang'a,2014,102.6,261.4,2.55,rice
+Nyeri,2014,102.6,261.4,2.55,rice
+Siaya,2014,2648,8137.76,3.07,rice
+Taita/Taveta,2014,265,1396,5.27,rice
+Tana River,2014,1355,4244.15,3.13,rice
 Tharaka-Nthi,2014,27.7,74,2.67,rice
 Vihiga,2014,54,116,2.15,rice
 Baringo,2015,301,843,2.8,rice
 Bungoma,2015,135,411,3.04,rice
 Busia,2015,1428,5715,4,rice
-Elgeyo marakwet,2015,33,96,2.91,rice
+Elgeyo/Marakwet,2015,33,96,2.91,rice
 Embu,2015,8,24,3,rice
 Garissa,2015,66,161,2.44,rice
 Homabay,2015,162,410,2.53,rice
@@ -263,19 +263,19 @@ Kirinyaga,2015,12015,49912,4.15,rice
 Kisumu,2015,3570,13655,3.82,rice
 Kwale,2015,279,980,3.51,rice
 Lamu,2015,376,840,2.23,rice
-Kericho,2015,11,32,2.91,rice
-Kisii,2015,189,486,2.57,rice
-Kiambu,2015,294,739,2.51,rice
-Bomet,2015,82,250,3.05,rice
-Embu,2015,209,451,2.16,rice
-Kajiado,2015,270,1130,4.19,rice
-Isiolo,2015,8345,29434,3.53,rice
+Meru,2015,11,32,2.91,rice
+Migori,2015,189,486,2.57,rice
+Murang'a,2015,294,739,2.51,rice
+Nyeri,2015,82,250,3.05,rice
+Siaya,2015,209,451,2.16,rice
+Taita/Taveta,2015,270,1130,4.19,rice
+Tana River,2015,8345,29434,3.53,rice
 Tharaka-Nthi,2015,380,1320,3.47,rice
 Vihiga,2015,1210,3855,3.19,rice
 Baringo,2016,300,563,1.88,rice
 Bungoma,2016,195,465,2.38,rice
 Busia,2016,1352,5357,3.96,rice
-Elgeyo marakwet,2016,23,63,2.74,rice
+Elgeyo/Marakwet,2016,23,63,2.74,rice
 Embu,2016,6,20,3.33,rice
 Garissa,2016,65,175,2.69,rice
 Homabay,2016,164,321,1.96,rice
@@ -285,13 +285,13 @@ Kirinyaga,2016,12893,44914,3.48,rice
 Kisumu,2016,3270,11155,3.41,rice
 Kwale,2016,311,666,2.14,rice
 Lamu,2016,440,800,1.82,rice
-Kericho,2016,10,38,3.8,rice
-Kisii,2016,216,583,2.7,rice
-Kiambu,2016,230,593,2.58,rice
-Bomet,2016,60,190,3.17,rice
-Embu,2016,111,272,2.45,rice
-Kajiado,2016,286,720,2.52,rice
-Isiolo,2016,8118,30447,3.75,rice
+Meru,2016,10,38,3.8,rice
+Migori,2016,216,583,2.7,rice
+Murang'a,2016,230,593,2.58,rice
+Nyeri,2016,60,190,3.17,rice
+Siaya,2016,111,272,2.45,rice
+Taita/Taveta,2016,286,720,2.52,rice
+Tana River,2016,8118,30447,3.75,rice
 Tharaka-Nthi,2016,310,1040,3.35,rice
 Vihiga,2016,1145,2275,1.99,rice
 Baringo,2012,148,2167,14.64,mango
@@ -377,7 +377,7 @@ Baringo,2012,39753,71866.62,1.81,maize
 Bomet,2012,32697,73277.82,2.24,maize
 Bungoma,2012,96209,262381.05,2.73,maize
 Busia,2012,41990,50102.37,1.19,maize
-Elgeyo marakwet,2012,31533,91964.43,2.92,maize
+Elgeyo/Marakwet,2012,31533,91964.43,2.92,maize
 Embu,2012,45215,46749.78,1.03,maize
 Garissa,2012,433,410.58,0.95,maize
 Homabay,2012,67420,97512.75,1.45,maize
@@ -396,7 +396,7 @@ Baringo,2013,29117,55805.04,1.92,maize
 Bomet,2013,30620,72235.8,2.36,maize
 Bungoma,2013,92705,221586.03,2.39,maize
 Busia,2013,45898,63229.5,1.38,maize
-Elgeyo marakwet,2013,32015,101335.77,3.17,maize
+Elgeyo/Marakwet,2013,32015,101335.77,3.17,maize
 Embu,2013,26820,35104.86,1.31,maize
 Garissa,2013,205,198.72,0.97,maize
 Homabay,2013,74359,110379.69,1.48,maize
@@ -415,7 +415,7 @@ Baringo,2014,34960,34959,1,maize
 Bomet,2014,30940,53162,1.72,maize
 Bungoma,2014,98074,267302,2.73,maize
 Busia,2014,50400,72662,1.44,maize
-Elgeyo marakwet,2014,27620,103448,3.75,maize
+Elgeyo/Marakwet,2014,27620,103448,3.75,maize
 Embu,2014,26720,26611,1,maize
 Garissa,2014,245,199,0.81,maize
 Homabay,2014,79667,124465,1.56,maize
@@ -434,7 +434,7 @@ Baringo,2015,44159,83313,1.89,maize
 Bomet,2015,35727,38720,1.08,maize
 Bungoma,2015,97397,260266,2.67,maize
 Busia,2015,50781,86526,1.7,maize
-Elgeyo marakwet,2015,33598,78020,2.32,maize
+Elgeyo/Marakwet,2015,33598,78020,2.32,maize
 Embu,2015,38699,49156,1.27,maize
 Garissa,2015,248,216,0.87,maize
 Homabay,2015,83900,137958,1.64,maize
@@ -453,7 +453,7 @@ Baringo,2016,33163,72495,2.19,maize
 Bomet,2016,32275,45517,1.41,maize
 Bungoma,2016,100712,301068,2.99,maize
 Busia,2016,38441,36631,0.95,maize
-Elgeyo marakwet,2016,33315,75005,2.25,maize
+Elgeyo/Marakwet,2016,33315,75005,2.25,maize
 Embu,2016,24686,16104,0.65,maize
 Garissa,2016,167,152,0.91,maize
 Homabay,2016,61940,71446,1.15,maize
@@ -472,7 +472,7 @@ Baringo,2016,402,311,0.773631841,greengrams
 Bomet,2016,402,311,0.773631841,greengrams
 Bungoma,2016,80,65,0.8125,greengrams
 Busia,2016,230,141,0.613043478,greengrams
-Elgeyo marakwet,2016,605,175,0.289256198,greengrams
+Elgeyo/Marakwet,2016,605,175,0.289256198,greengrams
 Embu,2016,5175,5003,0.966763285,greengrams
 Garissa,2016,36,20,0.555555556,greengrams
 Homabay,2016,542,436,0.804428044,greengrams
@@ -491,7 +491,7 @@ Baringo,2015,53,24,0.452830189,greengrams
 Bomet,2015,134,114,0.850746269,greengrams
 Bungoma,2015,134,114,0.850746269,greengrams
 Busia,2015,190,114,0.6,greengrams
-Elgeyo marakwet,2015,147,105,0.714285714,greengrams
+Elgeyo/Marakwet,2015,147,105,0.714285714,greengrams
 Embu,2015,7357,2488,0.338181324,greengrams
 Garissa,2015,26,7,0.269230769,greengrams
 Homabay,2015,250,118,0.472,greengrams
@@ -510,7 +510,7 @@ Baringo,2015,22,990,7.95,papaya
 Bomet,2015,2507,19940,7.953729557,papaya
 Bungoma,2015,2507,19940,7.953729557,papaya
 Busia,2015,2507,19940,7.953729557,papaya
-Elgeyo marakwet,2015,2507,10990,4.383725568,papaya
+Elgeyo/Marakwet,2015,2507,10990,4.383725568,papaya
 Embu,2015,2507,10990,4.383725568,papaya
 Garissa,2015,990,700,0.707070707,papaya
 Homabay,2015,2394,11200,4.678362573,papaya
@@ -529,7 +529,7 @@ Baringo,2015,36,318,8.833333333,grapes
 Bomet,2015,90,318,3.533333333,grapes
 Bungoma,2015,90,318,3.533333333,grapes
 Busia,2015,90,318,3.533333333,grapes
-Elgeyo marakwet,2015,80,300,3.75,grapes
+Elgeyo/Marakwet,2015,80,300,3.75,grapes
 Embu,2015,8,349,43.625,grapes
 Garissa,2015,7,348,49.71428571,grapes
 Homabay,2015,90,318,3.533333333,grapes
